@@ -20,7 +20,15 @@
             Código: <br/> <input type="text" name="curso[codigo]" placeholder="Código">
             <br> Descrição: <br /><input type="text" name="curso[descricao]" placeholder="Descrição">
             <br> CH: <br /><input type="text" name="curso[data]" placeholder="CH">
-            <br> Categoria: <br /><input type="text" name="curso[ctegoria]" placeholder="Categoria">
+
+            <!-- <br> Categoria: <br /><input type="text" name="curso[categoria]" placeholder="Categoria"> -->
+            <br>
+            Categoria: <br/> <select  name="curso[categoria]" placeholder="Categoria"> 
+                <option value="DE" >Design</option>
+                <option value="CP" >Computação</option>
+                <option value="AD" >Administração</option>
+            </select>
+
             <br>
             <button type="submit">Enviar</button>
         </form>
