@@ -15,9 +15,16 @@
         <h1>Lista de Cursos</h1>
         <h4>Selecione uma opção na lista para executá-la</h4>
     </header>
-    <section>
-        <!--será implementado em breve-->
-    </section>
+    <table border=1>
+        <tr>
+            <td>Código</td><td>Nome do curso</td>
+        </tr>
+        
+        <% for(var i=0; i< lista.length; i++) {%>
+        <tr>    <td><%= lista[i].id %></td><td><%= lista[i].nome %></td></tr>
+        <% } %>
+        
+    </table>
     <footer>
         <small>Sistema de Cadastro de Cursos</small>
     </footer>

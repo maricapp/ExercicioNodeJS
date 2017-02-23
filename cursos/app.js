@@ -18,6 +18,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static(__dirname + '/public'));
 load('models')
+  .then('minhaapi')
   .then('controllers')
   .then('routes')
   .into(app);
